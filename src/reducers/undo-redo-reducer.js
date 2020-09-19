@@ -8,8 +8,7 @@
  *    expectedState: undefined // the undo/ redo state that will be deleted from the array and stored in 
  *};
  */
-const undoRedoReducer = (state = {undo:[], redo: [], currentAction: undefined}, action) => {
-    console.log(state);
+const undoRedoReducer = (state = {undo:[], redo: [], currentAction: undefined}, action) => { 
     switch(action.type) {
         case "ADD":  
             state.action = action.type;
